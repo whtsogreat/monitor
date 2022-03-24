@@ -1,0 +1,111 @@
+2021-07-16 09:40:50.227 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 2698 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-16 09:40:50.287 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-16 09:40:56.910 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-16 09:40:56.927 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-16 09:40:56.929 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-16 09:40:56.930 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-16 09:40:57.119 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-16 09:40:57.120 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6652 ms
+2021-07-16 09:40:57.631 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-16 09:40:58.491 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-16 09:40:58.493 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-16 09:40:58.493 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-16 09:40:59.502 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-16 09:40:59.522 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-16 09:40:59.522 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-16 09:40:59.559 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-16 09:40:59.564 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-16 09:40:59.565 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626399659503'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-16 09:40:59.565 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-16 09:40:59.566 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-16 09:40:59.568 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2ba024cb
+2021-07-16 09:40:59.982 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-16 09:41:00.617 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-16 09:41:01.630 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f4a68ffb-7910-4ca9-9e0c-fa9be937631c
+
+2021-07-16 09:41:02.671 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63c4d16, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e61a863, org.springframework.security.web.header.HeaderWriterFilter@8b1202a, org.springframework.security.web.authentication.logout.LogoutFilter@4654e373, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@45849604, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fea9a7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cfa2ac5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29bd2796, org.springframework.security.web.session.SessionManagementFilter@7b9c2387, org.springframework.security.web.access.ExceptionTranslationFilter@103e7c7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dd3727c]
+2021-07-16 09:41:02.896 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-16 09:41:02.979 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-16 09:41:02.982 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-16 09:41:03.007 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 14.412 seconds (JVM running for 18.559)
+2021-07-16 09:41:32.988 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-16 09:41:33.032 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-16 09:41:33.032 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626341588336"'s failed in-progress jobs.
+2021-07-16 09:41:33.041 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626399659503 started.
+2021-07-16 09:41:33.054 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626399659503_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-16 09:47:46.317 INFO  --- [http-nio-9010-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-16 09:47:46.321 INFO  --- [http-nio-9010-exec-2] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-16 09:47:46.396 INFO  --- [http-nio-9010-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 74 ms
+2021-07-16 09:47:48.565 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:47:48.772 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:47:48.785 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:47:48.784 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.838 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.845 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:47:48.878 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.906 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.300 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:18.346 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:18.367 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.369 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.391 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:18.404 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.413 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:18.416 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.275 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:23.292 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:23.309 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.323 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.323 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.325 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:23.343 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.420 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.255 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:37.274 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:37.326 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.339 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.340 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.351 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.371 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.384 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 10:28:28.447 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s863ms), soft-evicting connections from pool.
+2021-07-16 11:45:28.659 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s402ms), soft-evicting connections from pool.
+2021-07-16 11:48:48.353 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=3m19s693ms).
+2021-07-16 11:50:31.915 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=1m13s553ms).
+2021-07-16 12:06:03.882 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m31s967ms).
+2021-07-16 12:06:10.041 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626399659503_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-16 12:17:27.095 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=10m23s206ms).
+2021-07-16 12:33:01.360 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626399659503_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-16 12:33:13.478 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m16s381ms).
+2021-07-16 12:59:59.858 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=26m16s372ms).
+2021-07-16 13:08:52.321 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=8m22s460ms).
+2021-07-16 14:15:03.875 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=5m10s805ms).
+2021-07-16 16:15:34.528 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s841ms), soft-evicting connections from pool.
+2021-07-16 17:04:17.783 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 17:04:17.838 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 17:04:17.860 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.872 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.875 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 17:04:17.906 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.909 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.925 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 17:30:34.775 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s763ms), soft-evicting connections from pool.
+2021-07-16 18:34:35.366 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626399659503 paused.
+2021-07-16 18:34:35.442 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-16 18:34:35.444 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-16 18:34:35.445 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626399659503 shutting down.
+2021-07-16 18:34:35.445 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626399659503 paused.
+2021-07-16 18:34:35.451 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626399659503 shutdown complete.
+2021-07-16 18:34:35.456 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-16 18:34:35.462 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-16 18:34:35.506 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-16 18:34:35.507 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye

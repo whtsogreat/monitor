@@ -1,0 +1,14 @@
+2021-12-22 10:20:16.474 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 10:41:28.984 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 10:50:34.795 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 11:08:11.426 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 11:12:37.507 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 11:43:53.501 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 11:44:53.470 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 13:07:01.175 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 13:11:09.256 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 13:34:36.281 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 13:48:00.742 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 13:49:18.248 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-12-22 16:22:24.090 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=2m36s128ms).
+2021-12-22 16:52:13.693 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m49s513ms).

@@ -1,0 +1,12 @@
+2022-03-23 10:31:30.722 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 10:32:19.535 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:26:51.187 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:29:24.531 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:32:30.573 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:36:50.220 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:54:30.987 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 13:56:04.751 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 14:05:22.027 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 14:10:48.844 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 14:12:19.395 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-23 14:13:11.366 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file

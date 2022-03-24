@@ -1,0 +1,1 @@
+2021-07-16 09:40:59.982 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file

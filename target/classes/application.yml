@@ -1,0 +1,122 @@
+properties:
+  #数据库
+#  db_host: localhost
+#  db_name: My-server
+#  db_user: root
+#  db_pass:
+  # 数据库
+#  db_host: 192.168.4.213
+#  db_name: platform-server
+#  db_user: root
+#  db_pass: root
+#  # 数据库
+#  db_host: 192.168.4.71
+#  db_name: power
+#  db_user: root
+#  db_pass: Steps@123
+    # 数据库
+    db_host: 192.168.3.136
+    db_name: head_ft
+    db_user: root
+    db_pass: E@x21^t&
+    #server: 114.247.223.109
+    #ftp服务器
+  # 71数据库
+#  power_host: 192.168.4.71
+#  power_name: power-server
+#  power_user: root
+#  power_pass: Steps@123
+#  ftp:
+#    host: 192.168.3.73
+#    #host: 114.247.223.109
+#    port: 21
+#    username: dev
+#    password: 123456
+#    basePath: /home/dev
+
+# 项目相关配置
+censoft:
+  # 文件路径 示例（ Windows配置D:/uploadPath，Linux配置 /home/uploadPath）
+  profile: /Users/wuhaotian/Desktop/file
+server:
+  port: 9010
+#  servlet:
+#    context-path: /demo
+
+spring:
+  servlet:
+    multipart:
+      maxFileSize: 40MB
+      maxRequestSize: 100MB
+  application:
+    name: resdemo
+  resources:
+    static-locations: classpath:/static/
+  mvc:
+    static-path-pattern: /static/**
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+      date: yyyy-MM-dd
+      time: HH:mm:ss
+    locale: zh_CN
+    log-request-details: true
+
+  freemarker:
+    request-context-attribute: request
+    suffix: .html
+    content-type: text/html
+    enabled: true
+    cache: false
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    settings:
+      number_format: '0.##'
+      classic_compatible: true
+  datasource:
+    dynamic:
+      hikari:
+        connection-timeout: 30000
+        max-lifetime: 1800000
+        max-pool-size: 15
+        min-idle: 5
+        connection-test-query: select 1
+        pool-name: AuthHikariCP
+      primary: base
+      datasource:
+        base:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://${properties.db_host}:3306/${properties.db_name}?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+          username: ${properties.db_user}
+          password: ${properties.db_pass}
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
+    jdbc-type-for-null: null
+    #log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    #log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      # 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射
+
+  global-config:
+    banner: true
+
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        # 使用 spring boot 2.2.2 的方式提供jwt key
+        key-value:
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAommHFlkEWVzs2rvadR7z
+          fNpN1SNQhdHthtLVCd0z8uhbRcX198DDvIZqvQGA/c7o4Omx62XwyoDbni+0vMsZ
+          UizwZx5xnUbQg3fMCSyUodrUP4DgbqoqCGWQLLsIVETpz26kwdVqLNMOZ7P/rkfZ
+          ystSbEh5NAAjEQg9yr3Akg/DPZd+SVqmk1d4JxqNRL5gqyXWorfXAfXFirqmlygX
+          RHXL1+QIAMQtqXlPNRh1g3aDbrEFvqP+kFfe3kvFqsVYEr/Qbre6dlL5oPYfgxLn
+          ZkBkzBq2no2WtG5etfoEMoMnaYVZ9c5QWznCdISRjDHHj3lMMovvHt0wEFVT2bZL
+          9QIDAQAB
+          -----END PUBLIC KEY-----
+rights:
+  nginxUrl: http://localhost:8935

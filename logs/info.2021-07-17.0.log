@@ -1,0 +1,64 @@
+2021-07-17 10:38:43.141 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandembp with PID 840 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-17 10:38:43.246 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-17 10:38:51.335 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-17 10:38:51.356 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-17 10:38:51.358 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-17 10:38:51.358 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-17 10:38:51.958 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-17 10:38:51.959 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8379 ms
+2021-07-17 10:38:53.181 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-17 10:38:54.847 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-17 10:38:54.849 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-17 10:38:54.850 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-17 10:38:56.638 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-17 10:38:56.682 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-17 10:38:56.689 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-17 10:38:56.737 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-17 10:38:56.748 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-17 10:38:56.750 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandembp1626489536640'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-17 10:38:56.750 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-17 10:38:56.751 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-17 10:38:56.754 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@777d191f
+2021-07-17 10:38:58.136 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-17 10:38:59.059 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-17 10:38:59.869 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b9f1bb58-515f-4eff-a7d1-4659928ea91b
+
+2021-07-17 10:39:00.297 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44d7e24, org.springframework.security.web.context.SecurityContextPersistenceFilter@280fafd, org.springframework.security.web.header.HeaderWriterFilter@20a24edf, org.springframework.security.web.authentication.logout.LogoutFilter@4a642e4b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3c28e5b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b275bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@626b639e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26c8b296, org.springframework.security.web.session.SessionManagementFilter@18e4674d, org.springframework.security.web.access.ExceptionTranslationFilter@3a3b10f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@250d440]
+2021-07-17 10:39:00.395 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-17 10:39:00.445 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-17 10:39:00.449 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-17 10:39:00.468 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 19.574 seconds (JVM running for 24.096)
+2021-07-17 10:39:30.451 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-17 10:39:30.590 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-17 10:39:30.590 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626399659503"'s failed in-progress jobs.
+2021-07-17 10:39:30.620 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandembp1626489536640 started.
+2021-07-17 10:39:30.724 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandembp1626489536640_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-17 10:40:11.318 INFO  --- [http-nio-9010-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-17 10:40:11.320 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-17 10:40:11.341 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 20 ms
+2021-07-17 10:56:23.414 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=28s370ms), soft-evicting connections from pool.
+2021-07-17 14:48:48.307 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandembp1626489536640_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-17 14:48:48.441 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=3h52m25s27ms).
+2021-07-17 15:34:41.215 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandembp1626489536640_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-17 15:34:52.925 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=20m31s373ms).
+2021-07-17 15:50:18.542 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m25s617ms).
+2021-07-17 15:59:07.323 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=8m18s809ms).
+2021-07-17 16:07:25.092 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandembp1626489536640 paused.
+2021-07-17 16:07:25.133 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-17 16:07:25.134 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-17 16:07:25.135 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandembp1626489536640 shutting down.
+2021-07-17 16:07:25.135 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandembp1626489536640 paused.
+2021-07-17 16:07:25.136 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandembp1626489536640 shutdown complete.
+2021-07-17 16:07:25.138 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-17 16:07:25.138 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-17 16:07:25.144 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-17 16:07:25.144 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye

@@ -1,0 +1,51 @@
+package ${package}.${classname}.service.impl;
+
+import org.springframework.stereotype.Service;
+import java.util.Map;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import ${mainPath}.utils.PageUtils;
+import ${mainPath}.utils.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import ${package}.${classname}.dao.${className}Dao;
+import ${package}.${classname}.entity.${className}Entity;
+import ${package}.${classname}.service.${className}Service;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+
+@Service("${classname}Service")
+public class ${className}ServiceImpl extends ServiceImpl<${className}Dao, ${className}Entity> implements ${className}Service {
+
+    @Autowired
+    private ${className}Dao ${classname}Dao;
+    @Override
+    public IPage<${className}Entity>  selectPage(Integer pageNo,Integer pageSize,${className}Entity ${classname}) {
+        if (pageNo == null) pageNo = 1;
+        if (pageSize == null) pageSize = 10;
+        Page<${className}Entity> page = new Page<>(pageNo, pageSize);
+        QueryWrapper<${className}Entity> ${classname}QueryWrapper = new QueryWrapper<>();
+#foreach ($column in $columns)
+#if($column.query)
+if(${classname}.get${column.attrName}()!=null && ${classname}.get${column.attrName}()!=""){
+#if("$column.queryType" =='LIKE')
+${classname}QueryWrapper.like("${column.columnName}",${classname}.get${column.attrName}());
+#end
+#if("$column.queryType" =='EQ')
+${classname}QueryWrapper.eq("${column.columnName}",${classname}.get${column.attrName}());
+#end
+}
+#end
+#end
+        IPage<${className}Entity> ${classname}EntityPage= ${classname}Dao.selectPage(page,${classname}QueryWrapper);
+
+        return ${classname}EntityPage;
+    }
+
+}

@@ -1,0 +1,289 @@
+2021-06-29 09:29:56.445 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 876 (/Users/wuhaotian/Desktop/platform/platform-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/platform/platform-server)
+2021-06-29 09:29:56.514 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-06-29 09:30:02.881 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9004 (http)
+2021-06-29 09:30:02.947 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9004"]
+2021-06-29 09:30:02.949 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-06-29 09:30:02.950 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-06-29 09:30:03.329 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-06-29 09:30:03.329 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6615 ms
+2021-06-29 09:30:04.265 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-06-29 09:30:04.873 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-06-29 09:30:04.875 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-06-29 09:30:04.876 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-06-29 09:30:06.564 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-06-29 09:30:06.617 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-29 09:30:06.618 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-06-29 09:30:06.665 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-06-29 09:30:06.678 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-06-29 09:30:06.680 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1624930206570'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-06-29 09:30:06.680 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-06-29 09:30:06.680 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-06-29 09:30:06.683 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7d50f2a8
+2021-06-29 09:30:07.464 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 09:30:11.763 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-29 09:30:12.919 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f63c16a1-d91e-4fb8-a0bd-b8a424d8089e
+
+2021-06-29 09:30:13.764 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a205ee5, org.springframework.security.web.context.SecurityContextPersistenceFilter@73be4cdd, org.springframework.security.web.header.HeaderWriterFilter@adc8683, org.springframework.security.web.authentication.logout.LogoutFilter@762da62b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@bb50de6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@638977e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72f24a84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fb44737, org.springframework.security.web.session.SessionManagementFilter@7e3d168e, org.springframework.security.web.access.ExceptionTranslationFilter@60e47aab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35fb3209]
+2021-06-29 09:30:14.139 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9004"]
+2021-06-29 09:30:14.229 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9004 (http) with context path ''
+2021-06-29 09:30:14.233 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-06-29 09:30:14.302 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 19.197 seconds (JVM running for 22.776)
+2021-06-29 09:30:44.241 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-06-29 09:30:44.394 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-06-29 09:30:44.396 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1624880993682"'s failed in-progress jobs.
+2021-06-29 09:30:44.444 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624930206570 started.
+2021-06-29 09:30:44.481 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624930206570_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling the first 1 triggers that missed their scheduled fire-time.  More misfired triggers remain to be processed.
+2021-06-29 09:30:44.667 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624930206570_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-06-29 09:31:10.254 INFO  --- [http-nio-9004-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 09:31:10.254 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-06-29 09:31:10.269 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 14 ms
+2021-06-29 09:31:12.794 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 09:31:12.942 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 09:31:12.944 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:12.974 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:12.990 WARN  --- [http-nio-9004-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 09:31:12.993 WARN  --- [http-nio-9004-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:13.009 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:13.012 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 10:36:25.773 ERROR --- [http-nio-9004-exec-8] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'empiricalResearchEntity' on field 'time': rejected value [2021-06-01]; codes [typeMismatch.empiricalResearchEntity.time,typeMismatch.time,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [empiricalResearchEntity.time,time]; arguments []; default message [time]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'time'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value '2021-06-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-06-01]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'empiricalResearchEntity' on field 'time': rejected value [2021-06-01]; codes [typeMismatch.empiricalResearchEntity.time,typeMismatch.time,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [empiricalResearchEntity.time,time]; arguments []; default message [time]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'time'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value '2021-06-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-06-01]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-29 10:37:33.708 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624930206570 paused.
+2021-06-29 10:37:33.780 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-29 10:37:33.781 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-06-29 10:37:33.782 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624930206570 shutting down.
+2021-06-29 10:37:33.786 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624930206570 paused.
+2021-06-29 10:37:33.797 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624930206570 shutdown complete.
+2021-06-29 10:37:33.805 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-06-29 10:37:33.809 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-06-29 10:37:33.817 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-06-29 10:37:33.817 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-06-29 10:37:43.611 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 1437 (/Users/wuhaotian/Desktop/platform/platform-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/platform/platform-server)
+2021-06-29 10:37:43.630 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-06-29 10:37:48.261 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9004 (http)
+2021-06-29 10:37:48.298 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9004"]
+2021-06-29 10:37:48.301 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-06-29 10:37:48.302 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-06-29 10:37:48.720 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-06-29 10:37:48.721 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4786 ms
+2021-06-29 10:37:49.349 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-06-29 10:37:49.789 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-06-29 10:37:49.790 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-06-29 10:37:49.790 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-06-29 10:37:50.506 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-06-29 10:37:50.525 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-29 10:37:50.526 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-06-29 10:37:50.551 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-06-29 10:37:50.554 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-06-29 10:37:50.556 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1624934270508'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-06-29 10:37:50.556 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-06-29 10:37:50.556 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-06-29 10:37:50.558 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@77aea
+2021-06-29 10:37:50.912 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 10:37:52.568 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-29 10:37:53.049 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 963a91cb-c523-4885-8d5f-a8497045a769
+
+2021-06-29 10:37:53.318 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c1b82cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@f08d676, org.springframework.security.web.header.HeaderWriterFilter@12548f9a, org.springframework.security.web.authentication.logout.LogoutFilter@2a65e237, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2e1291a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@478089b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dcca426, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@acd3460, org.springframework.security.web.session.SessionManagementFilter@6bc25ac2, org.springframework.security.web.access.ExceptionTranslationFilter@49bb808f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b317e7d]
+2021-06-29 10:37:53.403 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9004"]
+2021-06-29 10:37:53.451 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9004 (http) with context path ''
+2021-06-29 10:37:53.458 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-06-29 10:37:53.485 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 11.869 seconds (JVM running for 14.121)
+2021-06-29 10:38:23.464 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-06-29 10:38:23.496 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-06-29 10:38:23.497 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1624930206570"'s failed in-progress jobs.
+2021-06-29 10:38:23.515 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624934270508 started.
+2021-06-29 10:38:23.531 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624934270508_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-06-29 10:38:54.122 INFO  --- [http-nio-9004-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 10:38:54.124 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-06-29 10:38:54.136 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 11 ms
+2021-06-29 10:39:19.766 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s865ms), soft-evicting connections from pool.
+2021-06-29 10:57:16.873 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624934270508 paused.
+2021-06-29 10:57:17.019 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-29 10:57:17.022 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-06-29 10:57:17.024 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624934270508 shutting down.
+2021-06-29 10:57:17.028 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624934270508 paused.
+2021-06-29 10:57:17.030 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624934270508 shutdown complete.
+2021-06-29 10:57:17.036 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-06-29 10:57:17.037 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-06-29 10:57:17.050 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-06-29 10:57:17.051 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-06-29 16:38:34.495 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 3726 (/Users/wuhaotian/Desktop/platform/platform-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/platform/platform-server)
+2021-06-29 16:38:34.508 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-06-29 16:38:39.832 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9004 (http)
+2021-06-29 16:38:39.868 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9004"]
+2021-06-29 16:38:39.882 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-06-29 16:38:39.882 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-06-29 16:38:40.461 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-06-29 16:38:40.462 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5668 ms
+2021-06-29 16:38:41.369 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-06-29 16:38:42.554 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-06-29 16:38:42.565 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-06-29 16:38:42.566 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-06-29 16:38:49.109 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-06-29 16:38:49.166 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-29 16:38:49.167 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-06-29 16:38:49.424 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-06-29 16:38:49.437 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-06-29 16:38:49.450 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1624955929119'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-06-29 16:38:49.451 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-06-29 16:38:49.452 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-06-29 16:38:49.458 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6ddc67d0
+2021-06-29 16:38:57.678 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 16:39:11.358 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-29 16:39:12.184 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 10d630fb-1a9a-40bd-8bfe-9e08f9fb5224
+
+2021-06-29 16:39:13.315 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69de72ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@f591271, org.springframework.security.web.header.HeaderWriterFilter@7b29cdea, org.springframework.security.web.authentication.logout.LogoutFilter@38848217, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@71734463, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b339a08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fb5d334, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21c99abf, org.springframework.security.web.session.SessionManagementFilter@e6e5da4, org.springframework.security.web.access.ExceptionTranslationFilter@7e89eba7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ea9a091]
+2021-06-29 16:39:13.684 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9004"]
+2021-06-29 16:39:13.798 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9004 (http) with context path ''
+2021-06-29 16:39:13.803 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-06-29 16:39:13.858 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 41.051 seconds (JVM running for 47.425)
+2021-06-29 16:39:43.809 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-06-29 16:39:43.842 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-06-29 16:39:43.843 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1624934270508"'s failed in-progress jobs.
+2021-06-29 16:39:43.859 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624955929119 started.
+2021-06-29 16:39:43.871 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624955929119_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling the first 1 triggers that missed their scheduled fire-time.  More misfired triggers remain to be processed.
+2021-06-29 16:39:43.968 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624955929119_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-06-29 16:39:52.008 INFO  --- [http-nio-9004-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 16:39:52.010 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-06-29 16:39:52.042 INFO  --- [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 32 ms
+2021-06-29 16:39:52.847 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 16:39:52.847 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 16:39:52.866 WARN  --- [http-nio-9004-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.926 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:39:52.930 WARN  --- [http-nio-9004-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.960 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.993 WARN  --- [http-nio-9004-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:39:53.000 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.608 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 16:40:08.771 WARN  --- [http-nio-9004-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 16:40:08.819 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.852 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.883 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:40:08.903 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:40:08.925 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.939 WARN  --- [http-nio-9004-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 18:07:09.252 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624955929119_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-06-29 18:22:50.516 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624955929119_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-06-29 18:22:50.519 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1624955929119_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "zhangdejie1624961225707"'s failed in-progress jobs.
+2021-06-29 19:12:20.714 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624955929119 paused.
+2021-06-29 19:12:20.883 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-29 19:12:20.892 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-06-29 19:12:20.893 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624955929119 shutting down.
+2021-06-29 19:12:20.893 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624955929119 paused.
+2021-06-29 19:12:20.907 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1624955929119 shutdown complete.
+2021-06-29 19:12:20.957 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-06-29 19:12:20.963 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-06-29 19:12:20.993 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-06-29 19:12:20.994 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye

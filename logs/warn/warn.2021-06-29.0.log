@@ -1,0 +1,116 @@
+2021-06-29 09:30:07.464 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 09:31:12.794 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 09:31:12.942 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 09:31:12.944 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:12.974 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:12.990 WARN  --- [http-nio-9004-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 09:31:12.993 WARN  --- [http-nio-9004-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:13.009 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 09:31:13.012 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 10:36:25.773 ERROR --- [http-nio-9004-exec-8] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'empiricalResearchEntity' on field 'time': rejected value [2021-06-01]; codes [typeMismatch.empiricalResearchEntity.time,typeMismatch.time,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [empiricalResearchEntity.time,time]; arguments []; default message [time]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'time'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value '2021-06-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-06-01]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'empiricalResearchEntity' on field 'time': rejected value [2021-06-01]; codes [typeMismatch.empiricalResearchEntity.time,typeMismatch.time,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [empiricalResearchEntity.time,time]; arguments []; default message [time]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'time'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value '2021-06-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-06-01]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-29 10:37:50.912 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 10:39:19.766 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s865ms), soft-evicting connections from pool.
+2021-06-29 16:38:57.678 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-06-29 16:39:52.847 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 16:39:52.847 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 16:39:52.866 WARN  --- [http-nio-9004-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.926 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:39:52.930 WARN  --- [http-nio-9004-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.960 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:39:52.993 WARN  --- [http-nio-9004-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:39:53.000 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.608 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-06-29 16:40:08.771 WARN  --- [http-nio-9004-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-06-29 16:40:08.819 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.852 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.883 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:40:08.903 WARN  --- [http-nio-9004-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-06-29 16:40:08.925 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-06-29 16:40:08.939 WARN  --- [http-nio-9004-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex

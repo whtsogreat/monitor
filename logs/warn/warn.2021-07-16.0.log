@@ -1,0 +1,53 @@
+2021-07-16 09:40:59.982 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-16 09:47:48.565 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:47:48.772 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:47:48.784 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.785 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:47:48.838 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.845 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:47:48.878 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:47:48.906 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.300 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:18.346 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:18.367 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.369 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.391 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:18.404 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:18.413 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:18.416 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.275 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:23.292 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:23.309 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.323 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.323 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.325 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:23.343 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:23.420 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.255 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 09:57:37.274 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 09:57:37.326 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.339 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.340 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 09:57:37.351 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.371 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 09:57:37.384 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 10:28:28.447 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s863ms), soft-evicting connections from pool.
+2021-07-16 11:45:28.659 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s402ms), soft-evicting connections from pool.
+2021-07-16 11:48:48.353 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=3m19s693ms).
+2021-07-16 11:50:31.915 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=1m13s553ms).
+2021-07-16 12:06:03.882 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m31s967ms).
+2021-07-16 12:17:27.095 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=10m23s206ms).
+2021-07-16 12:33:13.478 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m16s381ms).
+2021-07-16 12:59:59.858 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=26m16s372ms).
+2021-07-16 13:08:52.321 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=8m22s460ms).
+2021-07-16 14:15:03.875 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=5m10s805ms).
+2021-07-16 16:15:34.528 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s841ms), soft-evicting connections from pool.
+2021-07-16 17:04:17.783 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-16 17:04:17.838 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-16 17:04:17.860 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.872 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.875 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 17:04:17.906 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.909 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-16 17:04:17.925 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-16 17:30:34.775 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=29s763ms), soft-evicting connections from pool.

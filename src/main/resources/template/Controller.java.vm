@@ -1,0 +1,141 @@
+package ${package}.${classname}.controller;
+
+import java.util.Arrays;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import lombok.Data;
+import lombok.NonNull;
+import com.mt.auth.utils.JsonResponse;
+import com.mt.auth.hr.HrUserEmp;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.mt.auth.utils.TokenUtils;
+import ${package}.${classname}.entity.${className}Entity;
+import ${package}.${classname}.service.${className}Service;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+@RestController
+@RequestMapping("/${pathName}")
+public class ${className}Controller {
+    @Autowired
+    private ${className}Service ${classname}Service;
+    @Autowired
+    private  TokenUtils tokenUtils;//引入登录用户权限类
+
+    /**
+     * 列表
+     */
+    @RequestMapping("/list")
+    public JsonResponse list(${className}Entity ${classname},Integer pageIndex,Integer pageSize){
+        JsonResponse jsonResponse = new JsonResponse();
+        //检查登录用户权限
+        HrUserEmp user = tokenUtils.getUserInfo();
+        if (user == null) {
+            return jsonResponse.setFailed(2,"暂无权限");
+        }
+        IPage<${className}Entity> page = ${classname}Service.selectPage(pageIndex,pageSize,${classname});
+        jsonResponse.put("data", page);
+        return jsonResponse.setSuccess("OK");
+    }
+
+
+    /**
+     * 信息
+     */
+    @RequestMapping("/info/{${pk.attrName2}}")
+    public JsonResponse info(@PathVariable("${pk.attrName2}") ${pk.attrType} ${pk.attrName2}){
+        JsonResponse jsonResponse = new JsonResponse();
+        //检查登录用户权限
+        HrUserEmp user = tokenUtils.getUserInfo();
+        if (user == null) {
+            return jsonResponse.setFailed(2,"暂无权限");
+        }
+		${className}Entity ${classname} = ${classname}Service.getById(${pk.attrName2});
+        jsonResponse.put("${classname}", ${classname});
+        return jsonResponse.setSuccess("OK");
+    }
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/save")
+    public JsonResponse save(${className}Entity ${classname}){
+        JsonResponse jsonResponse = new JsonResponse();
+        //检查登录用户权限
+        HrUserEmp user = tokenUtils.getUserInfo();
+        if (user == null) {
+            return jsonResponse.setFailed(2,"暂无权限");
+        }
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+#foreach ($column in $columns)
+#if($column.attrName2 == 'isDelete')
+    ${classname}.setIsDelete("0");
+#end
+#if($column.attrName2 == 'creatTime')
+
+    ${classname}.setCreatTime(simpleDateFormat.format(new Date()));
+#end
+#if($column.attrName2 == 'createTime')
+    ${classname}.setCreateTime(simpleDateFormat.format(new Date()));
+#end
+#if($column.attrName2 == 'createDate')
+    ${classname}.setCreateDate(simpleDateFormat.format(new Date()));
+#end
+#end
+		${classname}Service.save(${classname});
+
+        return jsonResponse.setSuccess("OK");
+    }
+
+    /**
+     * 修改
+     */
+    @RequestMapping("/update")
+    public JsonResponse update(${className}Entity ${classname}){
+        JsonResponse jsonResponse = new JsonResponse();
+        //检查登录用户权限
+        HrUserEmp user = tokenUtils.getUserInfo();
+        if (user == null) {
+            return jsonResponse.setFailed(2,"暂无权限");
+        }
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+#foreach ($column in $columns)
+#if($column.attrName2 == 'updateTime')
+        ${classname}.setUpdateTime(simpleDateFormat.format(new Date()));
+#end
+#if($column.attrName2 == 'updateDate')
+        ${classname}.setUpdateDate(simpleDateFormat.format(new Date()));
+#end
+#end
+		${classname}Service.updateById(${classname});
+
+        return jsonResponse.setSuccess("OK");
+    }
+
+    /**
+     * 删除
+     */
+    @RequestMapping("/delete")
+    public JsonResponse delete(${pk.attrType}[] ${pk.attrName2}s){
+        JsonResponse jsonResponse = new JsonResponse();
+        //检查登录用户权限
+        HrUserEmp user = tokenUtils.getUserInfo();
+        if (user == null) {
+            return jsonResponse.setFailed(2,"暂无权限");
+        }
+		${classname}Service.removeByIds(Arrays.asList(${pk.attrName2}s));
+
+        return jsonResponse.setSuccess("OK");
+    }
+
+}

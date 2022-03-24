@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "censoft",
+      "type": "com.mt.common.utils.ProjectConfig",
+      "sourceType": "com.mt.common.utils.ProjectConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

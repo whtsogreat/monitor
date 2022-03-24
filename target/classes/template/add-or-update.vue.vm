@@ -1,0 +1,254 @@
+<template>
+    <el-dialog
+            :title="!dataForm.id ? '新增' : '修改'"
+            :close-on-click-modal="false"
+            :visible.sync="visible">
+        <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()"
+                 label-width="80px">
+#foreach($column in $columns)
+#set($field=$column.attrName2)
+#if($column.insert && !$column.pk)
+#if(($column.usableColumn) || (!$column.superColumn))
+#set($parentheseIndex=$column.comments.indexOf("（"))
+#if($parentheseIndex != -1)
+#set($comment=$column.comments.substring(0, $parentheseIndex))
+#else
+#set($comment=$column.comments)
+#end
+#set($dictType=$column.dictType)
+#if($column.htmlType == "input")
+            <el-form-item label="${comment}" prop="${field}">
+                <el-input v-model="dataForm.${field}" placeholder="请输入${comment}"/>
+            </el-form-item>
+#elseif($column.htmlType == "imageUpload")
+            <el-form-item label="${comment}">
+                <imageUpload v-model="dataForm.${field}"/>
+            </el-form-item>
+#elseif($column.htmlType == "fileUpload")
+            <el-form-item label="${comment}">
+                <fileUpload v-model="dataForm.${field}"/>
+            </el-form-item>
+#elseif($column.htmlType == "editor")
+            <el-form-item label="${comment}">
+                <editor v-model="dataForm.${field}" :min-height="192"/>
+            </el-form-item>
+#elseif($column.htmlType == "select" && "" != $dictType)
+            <el-form-item label="${comment}" prop="${field}">
+                <dictSelect constantKey="$dictType" :defaultVal="dataForm.${field}"
+                            @currSelectChange="${field}ChangeHandle"></dictSelect>
+            </el-form-item>
+#elseif($column.htmlType == "select" && $dictType)
+            <el-form-item label="${comment}" prop="${field}">
+                <el-select v-model="dataForm.${field}" placeholder="请选择${comment}">
+                    <el-option label="请选择字典生成" value=""/>
+                </el-select>
+            </el-form-item>
+#elseif($column.htmlType == "checkbox" && "" != $dictType)
+            <el-form-item label="${comment}">
+                <el-checkbox-group v-model="dataForm.${field}">
+                    <el-checkbox
+                            v-for="dict in ${field}Options"
+                            :key="dict.dictValue"
+                            :label="dict.dictValue">
+                        {{dict.dictLabel}}
+                    </el-checkbox>
+                </el-checkbox-group>
+            </el-form-item>
+#elseif($column.htmlType == "checkbox" && $dictType)
+            <el-form-item label="${comment}">
+                <el-checkbox-group v-model="dataForm.${field}">
+                    <el-checkbox>请选择字典生成</el-checkbox>
+                </el-checkbox-group>
+            </el-form-item>
+#elseif($column.htmlType == "radio" && "" != $dictType)
+            <el-form-item label="${comment}">
+                <el-radio-group v-model="dataForm.${field}">
+                    <el-radio
+                            v-for="dict in ${field}Options"
+                            :key="dict.dictValue"
+#if($column.javaType == "Integer" || $column.javaType =="Long"):label="parseInt(dict.dictValue)"#else:label="dict.dictValue"#end>{{dict.dictLabel}}
+                    </el-radio>
+                </el-radio-group>
+            </el-form-item>
+#elseif($column.htmlType == "radio" && $dictType)
+            <el-form-item label="${comment}">
+                <el-radio-group v-model="dataForm.${field}">
+                    <el-radio label="1">请选择字典生成</el-radio>
+                </el-radio-group>
+            </el-form-item>
+#elseif($column.htmlType == "datetime")
+            <el-form-item label="${comment}" prop="${field}">
+                <el-date-picker clearable size="small"
+                                v-model="dataForm.${field}"
+                                type="datetime"
+                                value-format="yyyy-MM-dd HH:mm:ss"
+                                placeholder="选择${comment}">
+                </el-date-picker>
+            </el-form-item>
+#elseif($column.htmlType == "textarea")
+            <el-form-item label="${comment}" prop="${field}">
+                <el-input v-model="dataForm.${field}" type="textarea" placeholder="请输入内容"/>
+            </el-form-item>
+#end
+#end
+#end
+#end
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+      <el-button @click="visible = false">取消</el-button>
+      <el-button type="primary" @click="dataFormSubmit()">确定</el-button>
+    </span>
+    </el-dialog>
+</template>
+
+<script>
+    import dictSelect from "../dictionary/dict-select";
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "imageUpload")
+import ImageUpload from '@/components/util/image-upload';
+    #break
+#end
+#end
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "fileUpload")
+import FileUpload from '@/components/util/file-upload';
+    #break
+#end
+#end
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "editor")
+import Editor from '@/components/util/editor';
+    #break
+#end
+#end
+    export default {
+        data() {
+            return {
+                visible: false,
+                dataForm: {
+#foreach($column in $columns)
+#if($column.columnName == $pk.columnName)
+                ${column.attrName2}:0,
+#else
+                ${column.attrName2}: ''#if($velocityCount != $columns.size()),
+#end
+#end
+#end
+            },
+            dataRule: {
+#foreach($column in $columns)
+#if($column.columnName != $pk.columnName && $column.isRequired=='1')
+            ${column.attrName2}: [
+                {required: true, message: '${column.comments}不能为空', trigger: 'blur'}]#if($velocityCount != $columns.size()),
+#end
+#end
+#end
+            } ,
+#foreach ($column in $columns)
+#set($parentheseIndex=$column.comments.indexOf("（"))
+#if($parentheseIndex != -1)
+#set($comment=$column.comments.substring(0, $parentheseIndex))
+#else
+#set($comment=$column.comments)
+#end
+#if(${column.dictType} != '')
+            // $comment字典
+            ${column.attrName2}Options: [],
+#elseif($column.htmlType == "datetime" && $column.queryType == "BETWEEN")
+    #set($AttrName=$column.attrName2.substring(0,1).toUpperCase() + ${column.attrName2.substring(1)})
+           // $comment时间范围
+            daterange${AttrName}:[],
+#end
+#end
+            }
+        },
+        components: {
+            dictSelect,
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "imageUpload")
+            ImageUpload,
+#break
+#end
+#end
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "fileUpload")
+            FileUpload,
+#break
+#end
+#end
+#foreach($column in $columns)
+#if($column.insert && !$column.superColumn && !$column.pk && $column.htmlType == "editor")
+            Editor,
+#break
+#end
+#end
+        },
+        created() {
+
+        },
+        methods: {
+            init(id) {
+                this.dataForm.${pk.attrName2} = id || 0
+                this.visible = true
+                this.$nextTick(() => {
+                    this.$refs['dataForm'].resetFields()
+                    if(this.dataForm.${pk.attrName2}){
+                     this.$http({
+                        url: #[[this.$http.adornUrl]]#(`/${pathName}/info/#[[$]]#{this.dataForm.${pk.attrName2}}`),
+                        method:'get',
+                        #[[params :this.$http.adornParams()]]#
+                    }).then(({data}) => {
+                            if (data && data.code === 0) {
+                                this.dataForm= data.${classname}
+                            }
+                        })
+                    }
+                })
+            },
+            // 表单提交
+            dataFormSubmit() {
+            #[[this.$refs['dataForm'].validate((valid) => {]]#
+          if (valid) {
+              this.$http({
+                url: #[[this.$http.adornUrl]]#(`/${pathName}/${!this.dataForm.${pk.attrName2} ? 'save' : 'update'}`),
+                method:'post',
+              #[[data:this.$http.adornData({]]#
+#foreach($column in $columns)
+#if ($column.columnName == $pk.columnName)
+            '${column.attrName2}':this.dataForm.${column.attrName2}|| undefined,
+#else
+            '${column.attrName2}':this.dataForm.${column.attrName2}#if ($velocityCount != $columns.size()),
+#end
+#end
+#end
+            })
+          }).then(({data}) => {
+                  if (data && data.code === 0) {
+                  #[[this.$message({]]#
+                          message: '操作成功',
+                          type:'success',
+                          duration:1500,
+                          onClose:() => {
+                              this.visible = false
+                            #[[this.$emit('refreshDataList')]]#
+                          }
+                      })
+                  } else {
+                  #[[this.$message.error(data.msg)]]#
+                  }
+              })
+          }
+        })
+},
+#foreach($column in $columns)
+#if($column.query)
+    #if(($column.htmlType == "select" || $column.htmlType == "radio") && "" != $dictType)
+            ${column.attrName2}ChangeHandle(v) {
+            this.dataForm.${column.attrName2}= v;
+        },
+    #end
+#end
+#end
+        }
+    }
+</script>

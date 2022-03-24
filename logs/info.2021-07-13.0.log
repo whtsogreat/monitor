@@ -1,0 +1,1261 @@
+2021-07-13 16:12:02.008 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 5425 (/Users/wuhaotian/Desktop/My/My-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/My-server)
+2021-07-13 16:12:02.016 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 16:12:04.126 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 16:12:04.138 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:12:04.139 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 16:12:04.139 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 16:12:04.243 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 16:12:04.244 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2131 ms
+2021-07-13 16:12:04.549 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 16:12:06.246 ERROR --- [main] com.zaxxer.hikari.pool.HikariPool : base - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator.createDataSource(HikariDataSourceCreator.java:68)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:64)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:49)
+	at com.baomidou.dynamic.datasource.provider.AbstractDataSourceProvider.createDataSourceMap(AbstractDataSourceProvider.java:45)
+	at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:43)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.mt.demo2.RunApplication.main(RunApplication.java:19)
+2021-07-13 16:12:06.256 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrController' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/controller/HrController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+2021-07-13 16:12:06.260 INFO  --- [main] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-07-13 16:12:06.281 INFO  --- [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-13 16:12:06.291 ERROR --- [main] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrController' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/controller/HrController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.mt.demo2.RunApplication.main(RunApplication.java:19)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/My-server/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 73 common frames omitted
+Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:595)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:581)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator.createDataSource(HikariDataSourceCreator.java:68)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:64)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:49)
+	at com.baomidou.dynamic.datasource.provider.AbstractDataSourceProvider.createDataSourceMap(AbstractDataSourceProvider.java:45)
+	at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:43)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 84 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	... 94 common frames omitted
+2021-07-13 16:32:55.812 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 5588 (/Users/wuhaotian/Desktop/My/my-serve/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-serve)
+2021-07-13 16:32:55.824 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 16:32:57.838 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 16:32:57.850 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:32:57.851 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 16:32:57.851 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 16:32:57.953 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 16:32:57.953 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2033 ms
+2021-07-13 16:32:58.272 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 16:32:59.929 ERROR --- [main] com.zaxxer.hikari.pool.HikariPool : base - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator.createDataSource(HikariDataSourceCreator.java:68)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:64)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:49)
+	at com.baomidou.dynamic.datasource.provider.AbstractDataSourceProvider.createDataSourceMap(AbstractDataSourceProvider.java:45)
+	at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:43)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.mt.demo2.RunApplication.main(RunApplication.java:19)
+2021-07-13 16:32:59.936 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrController' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/controller/HrController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+2021-07-13 16:32:59.941 INFO  --- [main] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-07-13 16:32:59.960 INFO  --- [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-13 16:32:59.979 ERROR --- [main] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrController' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/controller/HrController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.mt.demo2.RunApplication.main(RunApplication.java:19)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginUserService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/utils/LoginUserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrService' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hrOrgDeptMapper' defined in file [/Users/wuhaotian/Desktop/My/my-serve/target/classes/com/mt/auth/hr/HrOrgDeptMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 73 common frames omitted
+Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:595)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:581)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator.createDataSource(HikariDataSourceCreator.java:68)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:64)
+	at com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator.createDataSource(DefaultDataSourceCreator.java:49)
+	at com.baomidou.dynamic.datasource.provider.AbstractDataSourceProvider.createDataSourceMap(AbstractDataSourceProvider.java:45)
+	at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:43)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 84 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	... 94 common frames omitted
+2021-07-13 16:35:17.049 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 5608 (/Users/wuhaotian/Desktop/My/my-serve/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-serve)
+2021-07-13 16:35:17.052 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 16:35:18.954 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 16:35:18.964 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:35:18.965 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 16:35:18.966 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 16:35:19.074 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 16:35:19.074 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1950 ms
+2021-07-13 16:35:19.363 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 16:35:20.030 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 16:35:20.032 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 16:35:20.032 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 16:35:20.733 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 16:35:20.753 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 16:35:20.754 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 16:35:20.775 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 16:35:20.780 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 16:35:20.781 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626165320736'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 16:35:20.782 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 16:35:20.782 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 16:35:20.788 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2c2a027c
+2021-07-13 16:35:21.391 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 16:35:21.669 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 16:35:21.988 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6457e6d5-82d7-4bcd-8e9e-15dfb438a00d
+
+2021-07-13 16:35:22.259 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@560271a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@38e83838, org.springframework.security.web.header.HeaderWriterFilter@374c40ba, org.springframework.security.web.authentication.logout.LogoutFilter@26c8b296, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5ec88f9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4966bab1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17c0274c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b9c411, org.springframework.security.web.session.SessionManagementFilter@22d477c2, org.springframework.security.web.access.ExceptionTranslationFilter@65eb3597, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@435e416c]
+2021-07-13 16:35:22.331 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:35:22.365 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 16:35:22.367 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 16:35:22.382 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 6.097 seconds (JVM running for 7.587)
+2021-07-13 16:35:52.369 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 16:35:52.470 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 16:35:52.471 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "WIN-AEBKCJQ3K381625573089866"'s failed in-progress jobs.
+2021-07-13 16:35:52.476 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626165320736 started.
+2021-07-13 16:35:52.523 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626165320736_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 16:37:01.597 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626165320736 paused.
+2021-07-13 16:37:01.668 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 16:37:01.669 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 16:37:01.670 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626165320736 shutting down.
+2021-07-13 16:37:01.670 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626165320736 paused.
+2021-07-13 16:37:01.671 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626165320736 shutdown complete.
+2021-07-13 16:37:01.672 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 16:37:01.672 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 16:37:01.681 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 16:37:01.681 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-07-13 16:56:24.679 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 6490 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-13 16:56:24.684 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 16:56:27.496 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 16:56:27.518 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:56:27.519 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 16:56:27.520 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 16:56:27.712 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 16:56:27.712 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2841 ms
+2021-07-13 16:56:28.059 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 16:56:28.904 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 16:56:28.905 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 16:56:28.906 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 16:56:29.667 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 16:56:29.687 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 16:56:29.688 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 16:56:29.709 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 16:56:29.712 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 16:56:29.713 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626166589669'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 16:56:29.713 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 16:56:29.713 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 16:56:29.716 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@316acbb5
+2021-07-13 16:56:30.168 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 16:56:30.453 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 16:56:30.834 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6409910b-9d98-4e17-a968-35e6c6e3002c
+
+2021-07-13 16:56:31.146 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a84788f, org.springframework.security.web.context.SecurityContextPersistenceFilter@64021427, org.springframework.security.web.header.HeaderWriterFilter@5f395ce1, org.springframework.security.web.authentication.logout.LogoutFilter@58687fb7, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@f245bdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@217dc48e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@339f3a55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@102c18e, org.springframework.security.web.session.SessionManagementFilter@7d2c9361, org.springframework.security.web.access.ExceptionTranslationFilter@29013ef2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@646cd766]
+2021-07-13 16:56:31.214 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 16:56:31.249 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 16:56:31.251 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 16:56:31.271 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 7.598 seconds (JVM running for 10.039)
+2021-07-13 16:57:01.255 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 16:57:01.313 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 16:57:01.313 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626165320736"'s failed in-progress jobs.
+2021-07-13 16:57:01.319 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626166589669 started.
+2021-07-13 16:57:01.326 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626166589669_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 16:58:40.183 INFO  --- [http-nio-9010-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-13 16:58:40.183 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-13 16:58:40.199 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 15 ms
+2021-07-13 16:58:41.212 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 16:58:41.255 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 16:58:41.279 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:41.296 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:41.316 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:58:41.333 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:41.350 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:41.354 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:58:47.180 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 16:58:47.189 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 16:58:47.226 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:58:47.230 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:47.252 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:58:47.252 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:47.269 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:58:47.286 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:59:46.503 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 16:59:46.516 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 16:59:46.511 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:59:46.524 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:59:46.547 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:59:46.555 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 16:59:46.562 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 16:59:46.587 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:37.651 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 17:10:37.690 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 17:10:37.697 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:37.727 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:37.764 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:10:37.783 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:37.802 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:37.835 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:10:45.638 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 17:10:45.663 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 17:10:45.681 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:45.706 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:10:45.722 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:45.729 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:10:45.749 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:10:45.749 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:24:53.080 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /sys/dept/selectComp
+2021-07-13 17:25:19.227 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /sys/dept/selectComp
+2021-07-13 17:31:33.957 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /sys/dept/selectComp
+2021-07-13 17:31:51.909 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /sys/dept/selectComp
+2021-07-13 17:38:09.887 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626166589669 paused.
+2021-07-13 17:38:10.013 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:38:10.016 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 17:38:10.018 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626166589669 shutting down.
+2021-07-13 17:38:10.020 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626166589669 paused.
+2021-07-13 17:38:10.032 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626166589669 shutdown complete.
+2021-07-13 17:38:10.034 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 17:38:10.035 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 17:38:10.056 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 17:38:10.058 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-07-13 17:38:22.007 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 7969 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-13 17:38:22.011 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 17:38:26.224 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 17:38:26.245 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:38:26.253 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 17:38:26.254 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 17:38:26.419 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 17:38:26.420 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4340 ms
+2021-07-13 17:38:26.895 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 17:38:27.639 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 17:38:27.640 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 17:38:27.640 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 17:38:28.578 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 17:38:28.596 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 17:38:28.596 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 17:38:28.627 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 17:38:28.630 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 17:38:28.631 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626169108580'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 17:38:28.632 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 17:38:28.632 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 17:38:28.634 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1b791dca
+2021-07-13 17:38:29.015 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 17:38:29.657 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:38:30.184 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: deb7ec85-f8f6-43de-a7aa-a265801c9e74
+
+2021-07-13 17:38:30.984 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@990b86b, org.springframework.security.web.context.SecurityContextPersistenceFilter@236a4d30, org.springframework.security.web.header.HeaderWriterFilter@4f2544b0, org.springframework.security.web.authentication.logout.LogoutFilter@5e8bd498, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3e8afc2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38968752, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@460e5ffe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dea1ecc, org.springframework.security.web.session.SessionManagementFilter@735988cf, org.springframework.security.web.access.ExceptionTranslationFilter@26679788, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e1a150c]
+2021-07-13 17:38:31.074 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:38:31.125 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 17:38:31.127 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 17:38:31.149 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 9.848 seconds (JVM running for 13.461)
+2021-07-13 17:39:01.135 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 17:39:01.197 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 17:39:01.198 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626166589669"'s failed in-progress jobs.
+2021-07-13 17:39:01.203 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626169108580 started.
+2021-07-13 17:39:01.213 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626169108580_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 17:39:02.404 INFO  --- [http-nio-9010-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-13 17:39:02.405 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-13 17:39:02.435 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 30 ms
+2021-07-13 17:53:15.838 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:53:15.838 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:53:15.838 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:53:15.838 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 17:53:15.844 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 17:53:15.892 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:53:15.893 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 17:53:15.906 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 17:53:17.988 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /baseevent/list
+2021-07-13 17:54:04.851 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626169108580 paused.
+2021-07-13 17:54:04.930 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:54:04.935 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 17:54:04.936 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626169108580 shutting down.
+2021-07-13 17:54:04.938 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626169108580 paused.
+2021-07-13 17:54:04.941 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626169108580 shutdown complete.
+2021-07-13 17:54:04.943 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 17:54:04.945 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 17:54:04.966 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 17:54:04.967 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-07-13 17:54:14.168 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 8064 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-13 17:54:14.172 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 17:54:16.396 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 17:54:16.408 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:54:16.409 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 17:54:16.410 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 17:54:16.527 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 17:54:16.528 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2261 ms
+2021-07-13 17:54:16.859 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 17:54:17.554 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 17:54:17.555 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 17:54:17.555 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 17:54:18.365 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 17:54:18.388 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 17:54:18.388 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 17:54:18.412 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 17:54:18.414 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 17:54:18.415 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626170058366'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 17:54:18.416 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 17:54:18.416 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 17:54:18.418 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6d815fb7
+2021-07-13 17:54:18.779 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 17:54:19.118 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:54:19.479 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2d29afb7-7024-4907-b5b0-5abe5cb8f5fc
+
+2021-07-13 17:54:19.773 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bc52a41, org.springframework.security.web.context.SecurityContextPersistenceFilter@41f40dfa, org.springframework.security.web.header.HeaderWriterFilter@28b2e4d8, org.springframework.security.web.authentication.logout.LogoutFilter@1e57b783, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@62b42406, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4331be30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48f4f03e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9f48198, org.springframework.security.web.session.SessionManagementFilter@6c9151c1, org.springframework.security.web.access.ExceptionTranslationFilter@396f2724, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53d87b2d]
+2021-07-13 17:54:19.897 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:54:19.943 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 17:54:19.945 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 17:54:19.960 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 6.747 seconds (JVM running for 9.322)
+2021-07-13 17:54:23.247 INFO  --- [http-nio-9010-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-13 17:54:23.249 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-13 17:54:23.261 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2021-07-13 17:54:49.950 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 17:54:49.963 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 17:54:49.963 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626169108580"'s failed in-progress jobs.
+2021-07-13 17:54:50.028 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170058366 started.
+2021-07-13 17:54:50.087 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626170058366_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 17:57:13.080 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170058366 paused.
+2021-07-13 17:57:13.173 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:57:13.175 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 17:57:13.176 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170058366 shutting down.
+2021-07-13 17:57:13.176 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170058366 paused.
+2021-07-13 17:57:13.178 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170058366 shutdown complete.
+2021-07-13 17:57:13.180 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 17:57:13.182 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 17:57:13.210 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 17:57:13.210 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-07-13 17:57:27.145 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 8130 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-13 17:57:27.153 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 17:57:30.079 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 17:57:30.090 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:57:30.092 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 17:57:30.093 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 17:57:30.218 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 17:57:30.219 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2882 ms
+2021-07-13 17:57:30.714 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 17:57:31.773 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 17:57:31.774 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 17:57:31.774 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 17:57:33.252 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 17:57:33.269 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 17:57:33.269 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 17:57:33.297 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 17:57:33.301 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 17:57:33.303 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626170253253'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 17:57:33.303 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 17:57:33.303 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 17:57:33.305 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2b098563
+2021-07-13 17:57:33.767 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 17:57:34.127 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 17:57:34.631 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1c0bcfe9-c5c7-441e-9101-ed3955d59f1a
+
+2021-07-13 17:57:34.968 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1626bddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@779b4f9c, org.springframework.security.web.header.HeaderWriterFilter@398694a6, org.springframework.security.web.authentication.logout.LogoutFilter@48d31d25, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@229cb4d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31fe0ce5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ca10069, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29532e91, org.springframework.security.web.session.SessionManagementFilter@18692e80, org.springframework.security.web.access.ExceptionTranslationFilter@78fb72cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75add13c]
+2021-07-13 17:57:35.047 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 17:57:35.092 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 17:57:35.094 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 17:57:35.110 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 9.441 seconds (JVM running for 12.246)
+2021-07-13 17:58:05.096 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 17:58:05.128 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 17:58:05.132 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626170058366"'s failed in-progress jobs.
+2021-07-13 17:58:05.171 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170253253 started.
+2021-07-13 17:58:05.185 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626170253253_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 17:59:27.890 INFO  --- [http-nio-9010-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-13 17:59:27.891 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-07-13 17:59:27.904 INFO  --- [http-nio-9010-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 13 ms
+2021-07-13 18:04:08.892 WARN  --- [http-nio-9010-exec-1] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 18:04:08.894 WARN  --- [http-nio-9010-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:04:08.895 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 18:04:08.893 WARN  --- [http-nio-9010-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 18:04:08.932 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:04:08.933 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:04:08.950 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:04:09.003 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 18:04:11.235 ERROR --- [http-nio-9010-exec-10] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-13 18:06:11.817 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-13 18:06:11.822 WARN  --- [http-nio-9010-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:06:11.834 WARN  --- [http-nio-9010-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-13 18:06:11.837 WARN  --- [http-nio-9010-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:06:11.849 WARN  --- [http-nio-9010-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 18:06:11.865 WARN  --- [http-nio-9010-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:06:11.868 WARN  --- [http-nio-9010-exec-7] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-13 18:06:11.882 WARN  --- [http-nio-9010-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-13 18:06:13.888 ERROR --- [http-nio-9010-exec-8] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-13 18:08:14.148 ERROR --- [http-nio-9010-exec-5] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-13 18:09:02.317 ERROR --- [http-nio-9010-exec-2] com.mt.common.exception.RRExceptionHandler : org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'baseEventEntity' on field 'applicationTime': rejected value [Invalid date]; codes [typeMismatch.baseEventEntity.applicationTime,typeMismatch.applicationTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [baseEventEntity.applicationTime,applicationTime]; arguments []; default message [applicationTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'applicationTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.format.annotation.DateTimeFormat @com.fasterxml.jackson.annotation.JsonFormat java.util.Date] for value 'Invalid date'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [Invalid date]]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:164)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.mt.auth.config.CorsFilter.doFilter(CorsFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-13 18:21:43.560 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170253253 paused.
+2021-07-13 18:21:43.645 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 18:21:43.647 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 18:21:43.648 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170253253 shutting down.
+2021-07-13 18:21:43.648 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170253253 paused.
+2021-07-13 18:21:43.651 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626170253253 shutdown complete.
+2021-07-13 18:21:43.653 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 18:21:43.654 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 18:21:43.681 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 18:21:43.682 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2021-07-13 18:21:53.895 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 8306 (/Users/wuhaotian/Desktop/My/my-server/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/My/my-server)
+2021-07-13 18:21:53.902 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2021-07-13 18:21:56.773 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2021-07-13 18:21:56.785 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2021-07-13 18:21:56.787 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-07-13 18:21:56.788 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-07-13 18:21:56.925 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-07-13 18:21:56.925 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2910 ms
+2021-07-13 18:21:57.330 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2021-07-13 18:21:58.020 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2021-07-13 18:21:58.021 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2021-07-13 18:21:58.021 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2021-07-13 18:21:58.796 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-07-13 18:21:58.812 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-07-13 18:21:58.812 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2021-07-13 18:21:58.844 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Using db table-based data access locking (synchronization).
+2021-07-13 18:21:58.847 INFO  --- [main] org.springframework.scheduling.quartz.LocalDataSourceJobStore : JobStoreCMT initialized.
+2021-07-13 18:21:58.848 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RenrenScheduler' with instanceId 'wuhaotiandeMacBook-Pro.local1626171718797'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-07-13 18:21:58.848 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'RenrenScheduler' initialized from an externally provided properties instance.
+2021-07-13 18:21:58.848 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2021-07-13 18:21:58.850 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@794c5f5e
+2021-07-13 18:21:59.204 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-13 18:21:59.539 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-13 18:21:59.902 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: be3b1c85-19ca-4dc3-a7b2-71ee6d0ac818
+
+2021-07-13 18:22:00.285 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc59ab7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4627dfda, org.springframework.security.web.header.HeaderWriterFilter@30ef32eb, org.springframework.security.web.authentication.logout.LogoutFilter@6c9151c1, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@1626bddf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eebc0db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c28f97e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@410f53b2, org.springframework.security.web.session.SessionManagementFilter@355493bf, org.springframework.security.web.access.ExceptionTranslationFilter@229cb4d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@624d778e]
+2021-07-13 18:22:00.367 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2021-07-13 18:22:00.409 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2021-07-13 18:22:00.411 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Will start Quartz Scheduler [RenrenScheduler] in 30 seconds
+2021-07-13 18:22:00.425 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 7.773 seconds (JVM running for 11.165)
+2021-07-13 18:22:30.415 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now, after delay of 30 seconds
+2021-07-13 18:22:30.473 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: detected 1 failed or restarted instances.
+2021-07-13 18:22:30.473 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.springframework.scheduling.quartz.LocalDataSourceJobStore : ClusterManager: Scanning for instance "wuhaotiandeMacBook-Pro.local1626170253253"'s failed in-progress jobs.
+2021-07-13 18:22:30.478 INFO  --- [Quartz Scheduler [RenrenScheduler]] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626171718797 started.
+2021-07-13 18:22:30.485 INFO  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1626171718797_MisfireHandler] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Handling 1 trigger(s) that missed their scheduled fire-time.
+2021-07-13 18:28:39.990 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626171718797 paused.
+2021-07-13 18:28:40.161 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-13 18:28:40.162 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2021-07-13 18:28:40.163 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626171718797 shutting down.
+2021-07-13 18:28:40.163 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626171718797 paused.
+2021-07-13 18:28:40.165 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler RenrenScheduler_$_wuhaotiandeMacBook-Pro.local1626171718797 shutdown complete.
+2021-07-13 18:28:40.167 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2021-07-13 18:28:40.168 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2021-07-13 18:28:40.190 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2021-07-13 18:28:40.190 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye

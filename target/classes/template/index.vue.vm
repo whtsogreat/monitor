@@ -1,0 +1,260 @@
+<template>
+    <div class="mod-config">
+        <el-form :inline="true" :model="dataForm" @keyup.enter.native="getDataList()">
+#foreach($column in $columns)
+#if($column.query)
+#set($dictType=$column.dictType)
+#set($AttrName=$column.attrName2.substring(0,1).toUpperCase() + ${column.attrName2.substring(1)})
+#set($parentheseIndex=$column.comments.indexOf("（"))
+#if($parentheseIndex != -1)
+#set($comment=$column.comments.substring(0, $parentheseIndex))
+#else
+#set($comment=$column.comments)
+#end
+#if($column.htmlType == "input")
+            <el-form-item label="${comment}" prop="${column.attrName2}">
+                <el-input
+                        v-model="dataForm.${column.attrName2}"
+                        placeholder="请输入${comment}"
+                        clearable
+                        size="small"
+                />
+            </el-form-item>
+#elseif(($column.htmlType == "select" || $column.htmlType == "radio") && "" != $dictType)
+            <el-form-item label="${comment}" prop="${column.attrName2}">
+                <dictSelect constantKey="$dictType" :defaultVal="${column.attrName2}"
+                            @currSelectChange="${column.attrName2}ChangeHandle"></dictSelect>
+            </el-form-item>
+#elseif(($column.htmlType == "select" || $column.htmlType == "radio") && $dictType)
+            <el-form-item label="${comment}" prop="${column.attrName2}">
+                <el-select v-model="dataForm.${column.attrName2}" placeholder="请选择${comment}" clearable
+                           size="small">
+                    <el-option label="请选择字典生成" value=""/>
+                </el-select>
+            </el-form-item>
+#elseif($column.htmlType == "datetime" && $column.queryType != "BETWEEN")
+            <el-form-item label="${comment}" prop="${column.attrName2}">
+                <el-date-picker clearable size="small"
+                                v-model="dataForm.${column.attrName2}"
+                                type="date"
+                                value-format="yyyy-MM-dd"
+                                placeholder="选择${comment}">
+                </el-date-picker>
+            </el-form-item>
+#elseif($column.htmlType == "datetime" && $column.queryType == "BETWEEN")
+            <el-form-item label="${comment}">
+                <el-date-picker
+                        v-model="dataForm.${column.attrName2}"
+                        size="small"
+                        style="width: 240px"
+                        value-format="yyyy-MM-dd"
+                        type="daterange"
+                        range-separator="-"
+                        start-placeholder="开始日期"
+                        end-placeholder="结束日期"
+                ></el-date-picker>
+            </el-form-item>
+#end
+#end
+#end
+            <el-form-item>
+                <el-button @click="getDataList()">查询</el-button>
+                <el-button type="primary" @click="addOrUpdateHandle()">新增</el-button>
+                <el-button type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除
+                </el-button>
+            </el-form-item>
+        </el-form>
+        <el-table
+                :data="dataList"
+                border
+                v-loading="dataListLoading"
+                @selection-change="selectionChangeHandle"
+                style="width: 100%;">
+            <el-table-column
+                    type="selection"
+                    header-align="center"
+                    align="center"
+                    width="50">
+            </el-table-column>
+            <el-table-column
+                    label="序号"
+                    align="center"
+                    type="index"
+                    width="50">
+            </el-table-column>
+#foreach($column in $columns)
+#set($attrName2=$column.attrName2)
+#set($parentheseIndex=$column.comments.indexOf("（"))
+#if($parentheseIndex != -1)
+    #set($comment=$column.comments.substring(0, $parentheseIndex))
+#else
+    #set($comment=$column.comments)
+#end
+#if($column.pk)
+            <el-table-column label="${column.comments}" align="center" prop="${attrName2}"/>
+#elseif($column.list && $column.htmlType == "datetime")
+            <el-table-column label="${column.comments}" align="center" prop="${attrName2}" width="180">
+            </el-table-column>
+#elseif($column.list && $column.htmlType=="select" &&  "" != $column.dictType)
+            <el-table-column label="${column.comments}" align="center" prop="${attrName2}">
+                <template slot-scope="scope">
+                    <dictLabel constantKey="$column.dictType" :defaultVal="scope.row.${attrName2}"></dictLabel>
+                </template>
+            </el-table-column>
+#elseif($column.list && "" != $attrName2)
+            <el-table-column label="${column.comments}" align="center" prop="${attrName2}"/>
+#end
+#end
+            <el-table-column
+                    fixed="right"
+                    header-align="center"
+                    align="center"
+                    width="150"
+                    label="操作">
+                <template slot-scope="scope">
+                    <el-button type="text" size="small" @click="addOrUpdateHandle(scope.row.${pk.attrName2})">修改
+                    </el-button>
+                    <el-button type="text" size="small" @click="deleteHandle(scope.row.${pk.attrName2})">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+        <el-pagination
+                @size-change="sizeChangeHandle"
+                @current-change="currentChangeHandle"
+                :current-page="pageIndex"
+                :page-sizes="[10, 20, 50, 100]"
+                :page-size="pageSize"
+                :total="totalPage"
+                layout="total, sizes, prev, pager, next, jumper">
+        </el-pagination>
+        <!-- 弹窗, 新增 / 修改 -->
+        <add-or-update v-if="addOrUpdateVisible" ref="addOrUpdate" @refreshDataList="getDataList"></add-or-update>
+    </div>
+</template>
+
+<script>
+    import AddOrUpdate from './${pathName}-add-or-update'
+    import dictLabel from "../dictionary/dict-label";
+    import dictSelect from "../dictionary/dict-select";
+
+    export default {
+        data() {
+            return {
+            dataForm: {
+#foreach($column in $columns)
+#if($column.query)
+        ${column.attrName2}:"",
+#end
+#end
+
+        },
+            dataList: [],
+            pageIndex:1,
+            pageSize:10,
+            totalPage:0,
+            dataListLoading:false,
+            dataListSelections:[],
+            addOrUpdateVisible:false
+        }
+        },
+        components: {
+            AddOrUpdate,
+            dictLabel,
+            dictSelect
+        },
+        activated() {
+            this.getDataList()
+        },
+        methods: {
+
+            // 获取数据列表
+            getDataList() {
+            this.dataListLoading = true,
+         #[[this.$http({]]#
+            #[[url:this.$http.adornUrl]]#('/${pathName}/list'),
+              method: 'get',
+           #[[params:this.$http.adornParams({]]#
+                 'pageIndex': this.pageIndex,
+                 'pageSize' :this.pageSize,
+#foreach($column in $columns)
+#if($column.query)
+                '${column.attrName2}':this.dataForm.${column.attrName2},
+#end
+#end
+            })
+            }).then(({data}) => {
+                    if (data && data.code === 0) {
+                        this.dataList = data.data.records
+                        this.totalPage = data.data.total
+                    } else {
+                        this.dataList = []
+                        this.totalPage = 0
+                    }
+                    this.dataListLoading = false
+                })
+            },
+            // 每页数
+            sizeChangeHandle(val) {
+                this.pageSize = val
+                this.pageIndex = 1
+                this.getDataList()
+            },
+            // 当前页
+            currentChangeHandle(val) {
+                this.pageIndex = val
+                this.getDataList()
+            },
+            // 多选
+            selectionChangeHandle(val) {
+                this.dataListSelections = val
+            },
+            // 新增 / 修改
+            addOrUpdateHandle(id) {
+                this.addOrUpdateVisible = true,
+        #[[this.$nextTick(() => {]]#
+
+          this.$refs.addOrUpdate.init(id)
+                })
+            },
+            // 删除
+        deleteHandle(id) {
+            var ids = id ? [id] : this.dataListSelections.map(item => {
+            return item.id
+            })
+        #[[this.$confirm(`确定进行[${id ? '删除' : '批量删除'}]操作?`, '提示', {]]#
+              confirmButtonText: '确定',
+              cancelButtonText:'取消',
+               type:'warning'
+            }).then(() => {
+                #[[this.$http({]]#
+                url: #[[this.$http.adornUrl]]#('/${pathName}/delete'),
+                method:'post',
+                data:this.$http.adornData({ids:ids}, false)
+                }).then(({data}) => {
+                        if (data && data.code === 0) {
+                        #[[this.$message({]]#
+                        message: '操作成功',
+                        type: 'success',
+                        duration:1500,
+                        onClose:() => {
+                                this.getDataList()
+                            }
+                        })
+                        } else {
+                        #[[this.$message.error(data.msg)]]#
+                        }
+                    })
+                })
+            },
+#foreach($column in $columns)
+#if($column.query)
+#if(($column.htmlType == "select" || $column.htmlType == "radio") && "" != $dictType)
+    ${column.attrName2}ChangeHandle(v) {
+    this.dataForm.${column.attrName2}= v;
+},
+#end
+#end
+#end
+        }
+    }
+</script>

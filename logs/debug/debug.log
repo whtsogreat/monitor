@@ -1,0 +1,88 @@
+2022-03-24 11:45:38.433 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 1644 (/Users/wuhaotian/Desktop/monitor/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/monitor)
+2022-03-24 11:45:38.455 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2022-03-24 11:45:40.707 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2022-03-24 11:45:40.718 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2022-03-24 11:45:40.719 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-03-24 11:45:40.719 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-03-24 11:45:40.835 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2022-03-24 11:45:40.835 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2199 ms
+2022-03-24 11:45:41.123 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2022-03-24 11:45:41.770 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2022-03-24 11:45:41.771 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2022-03-24 11:45:41.771 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2022-03-24 11:45:42.503 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-24 11:45:42.995 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 11:45:43.258 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2022-03-24 11:45:43.270 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 11:45:43.271 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2022-03-24 11:45:43.272 INFO  --- [main] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2022-03-24 11:45:43.273 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 11:45:43.273 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 11:45:43.273 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2022-03-24 11:45:43.273 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@68b3248a
+2022-03-24 11:45:43.317 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef55e41b-f357-4f8e-b94f-391a18bbb650
+
+2022-03-24 11:45:43.594 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77eb607e, org.springframework.security.web.context.SecurityContextPersistenceFilter@241d1052, org.springframework.security.web.header.HeaderWriterFilter@4a453f8d, org.springframework.security.web.authentication.logout.LogoutFilter@67e11bda, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3e01796a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bb99d1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fdac2a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f1fbc9f, org.springframework.security.web.session.SessionManagementFilter@4fedf908, org.springframework.security.web.access.ExceptionTranslationFilter@3460e4ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32328dc4]
+2022-03-24 11:45:43.645 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2022-03-24 11:45:43.666 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2022-03-24 11:45:43.668 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now
+2022-03-24 11:45:43.668 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 11:45:43.680 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 5.973 seconds (JVM running for 7.833)
+2022-03-24 13:08:23.722 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 13:08:23.883 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.quartz.SchedulerFactoryBean : Shutting down Quartz Scheduler
+2022-03-24 13:08:23.884 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-03-24 13:08:23.884 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-03-24 13:08:23.885 INFO  --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-03-24 13:08:23.888 INFO  --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 13:08:23.908 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource start closing ....
+2022-03-24 13:08:23.931 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown initiated...
+2022-03-24 13:08:23.981 INFO  --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : base - Shutdown completed.
+2022-03-24 13:08:23.981 INFO  --- [SpringContextShutdownHook] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource all closed success,bye
+2022-03-24 13:11:56.750 INFO  --- [main] com.mt.demo2.RunApplication : Starting RunApplication on wuhaotiandeMacBook-Pro.local with PID 1905 (/Users/wuhaotian/Desktop/monitor/target/classes started by wuhaotian in /Users/wuhaotian/Desktop/monitor)
+2022-03-24 13:11:56.755 INFO  --- [main] com.mt.demo2.RunApplication : No active profile set, falling back to default profiles: default
+2022-03-24 13:11:58.724 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9010 (http)
+2022-03-24 13:11:58.736 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9010"]
+2022-03-24 13:11:58.737 INFO  --- [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-03-24 13:11:58.737 INFO  --- [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-03-24 13:11:58.840 INFO  --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2022-03-24 13:11:58.841 INFO  --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1990 ms
+2022-03-24 13:11:59.125 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Starting...
+2022-03-24 13:11:59.989 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : base - Start completed.
+2022-03-24 13:11:59.990 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource - load a datasource named [base] success
+2022-03-24 13:11:59.990 INFO  --- [main] com.baomidou.dynamic.datasource.DynamicRoutingDataSource : dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2022-03-24 13:12:00.726 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2022-03-24 13:12:01.422 INFO  --- [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 13:12:01.781 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2022-03-24 13:12:01.798 INFO  --- [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-24 13:12:01.799 INFO  --- [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.0 created.
+2022-03-24 13:12:01.800 INFO  --- [main] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2022-03-24 13:12:01.801 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-03-24 13:12:01.802 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-03-24 13:12:01.802 INFO  --- [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.0
+2022-03-24 13:12:01.803 INFO  --- [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2ec99035
+2022-03-24 13:12:01.864 INFO  --- [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a87e9ddb-b126-45c6-9616-57d863e0cd83
+
+2022-03-24 13:12:02.225 INFO  --- [main] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43d65a81, org.springframework.security.web.context.SecurityContextPersistenceFilter@45592af7, org.springframework.security.web.header.HeaderWriterFilter@61f377d1, org.springframework.security.web.authentication.logout.LogoutFilter@4017fe2c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@715fa8c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36359723, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c46c9c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9cfc77, org.springframework.security.web.session.SessionManagementFilter@4f1fb828, org.springframework.security.web.access.ExceptionTranslationFilter@65be88ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a83ccd2]
+2022-03-24 13:12:02.282 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9010"]
+2022-03-24 13:12:02.321 INFO  --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9010 (http) with context path ''
+2022-03-24 13:12:02.323 INFO  --- [main] org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now
+2022-03-24 13:12:02.323 INFO  --- [main] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-03-24 13:12:02.336 INFO  --- [main] com.mt.demo2.RunApplication : Started RunApplication in 6.458 seconds (JVM running for 8.413)

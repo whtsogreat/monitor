@@ -1,0 +1,339 @@
+2021-07-02 00:15:32.021 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@531fa79f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 00:15:32.711 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d838d70 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 00:15:34.378 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m19s837ms).
+2021-07-02 00:15:37.110 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24e422bc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 00:15:37.721 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64fd5f75 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 00:15:42.115 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1dd9d281 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 01:45:25.165 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=8m20s402ms).
+2021-07-02 01:45:26.184 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@100b2bd9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 01:45:27.202 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72e7e7da (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 01:45:31.188 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c629d19 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 01:45:32.212 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@409aaf6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 01:45:36.200 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625120325906_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@476376a6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 09:56:55.971 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 09:58:06.774 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-02 09:58:06.983 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-02 09:58:07.003 WARN  --- [http-nio-9004-exec-9] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 09:58:07.011 WARN  --- [http-nio-9004-exec-2] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-02 09:58:07.029 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 09:58:07.064 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 09:58:07.087 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 09:58:07.112 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-02 10:23:32.969 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=2m38s418ms).
+2021-07-02 10:23:35.032 WARN  --- [RenrenScheduler_QuartzSchedulerThread] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3cb2cee0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 10:23:39.181 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625191015482_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625191015482) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 10:24:01.817 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Retrograde clock change detected (housekeeper delta=28s851ms), soft-evicting connections from pool.
+2021-07-02 10:25:15.550 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625191015482_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625191015482) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 10:25:22.851 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=1m21s34ms).
+2021-07-02 10:43:26.677 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 10:56:16.471 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 11:03:25.289 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 12:01:41.559 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@429e8bde (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:01:41.743 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1709bab1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:01:46.572 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@66e0b978 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:01:46.761 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@634bec9b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:01:51.580 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70103984 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:01:51.590 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625195004708) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 12:01:56.672 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=15m32s108ms).
+2021-07-02 12:30:58.328 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=29m1s657ms).
+2021-07-02 12:30:58.328 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5473f8ed (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:31:01.399 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56c9be51 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:31:03.330 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49682729 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:31:06.406 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4848e538 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:31:08.331 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b8e3636 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:31:08.355 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625195004708) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 12:31:09.027 WARN  --- [RenrenScheduler_QuartzSchedulerThread] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a10681 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:34:21.926 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625195004708) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 12:34:26.770 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=2m58s466ms).
+2021-07-02 12:36:42.015 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5fa936ee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:36:46.284 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@484ff79e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:36:47.019 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@153de642 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:36:47.869 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@96085b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:36:47.880 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625195004708) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 12:36:48.596 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4066542c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 12:36:57.650 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=2m877ms).
+2021-07-02 13:08:20.942 WARN  --- [base housekeeper] com.zaxxer.hikari.pool.HikariPool : base - Thread starvation or clock leap detected (housekeeper delta=31m23s292ms).
+2021-07-02 13:08:23.321 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f92341a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:25.283 WARN  --- [RenrenScheduler_QuartzSchedulerThread] com.zaxxer.hikari.pool.ProxyConnection : base - Connection com.mysql.cj.jdbc.ConnectionImpl@40e9162d marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,003,976 milliseconds ago. The last packet sent successfully to the server was 2,003,976 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:842)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggerFired(JobStoreSupport.java:3026)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2970)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2963)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,003,976 milliseconds ago. The last packet sent successfully to the server was 2,003,976 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:702)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:641)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:940)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1075)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:930)
+	... 11 common frames omitted
+Caused by: java.net.SocketException: Network is down (Read failed)
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:532)
+	... 16 common frames omitted
+2021-07-02 13:08:25.285 ERROR --- [RenrenScheduler_QuartzSchedulerThread] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Error retrieving job, setting trigger state to ERROR.
+org.quartz.JobPersistenceException: Couldn't retrieve job: Communications link failure
+
+The last packet successfully received from the server was 2,003,976 milliseconds ago. The last packet sent successfully to the server was 2,003,976 milliseconds ago.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1401)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggerFired(JobStoreSupport.java:3026)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2970)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2963)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,003,976 milliseconds ago. The last packet sent successfully to the server was 2,003,976 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:842)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 6 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,003,976 milliseconds ago. The last packet sent successfully to the server was 2,003,976 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:702)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:641)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:940)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1075)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:930)
+	... 11 common frames omitted
+Caused by: java.net.SocketException: Network is down (Read failed)
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:532)
+	... 16 common frames omitted
+2021-07-02 13:08:25.287 ERROR --- [RenrenScheduler_QuartzSchedulerThread] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Unable to set trigger state to ERROR.
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy102.prepareStatement(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at com.sun.proxy.$Proxy108.prepareStatement(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.updateTriggerState(StdJDBCDelegate.java:1322)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggerFired(JobStoreSupport.java:3031)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2970)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$44.execute(JobStoreSupport.java:2963)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+2021-07-02 13:08:25.288 ERROR --- [RenrenScheduler_QuartzSchedulerThread] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Couldn't rollback jdbc connection. Connection is closed
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy102.rollback(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at com.sun.proxy.$Proxy108.rollback(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.rollbackConnection(JobStoreSupport.java:3712)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3853)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+2021-07-02 13:08:28.325 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@321189cb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:30.293 WARN  --- [RenrenScheduler_QuartzSchedulerThread] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76b1603 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:31.228 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@855f05d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:31.243 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_ClusterManager] org.springframework.scheduling.quartz.LocalDataSourceJobStore : This scheduler instance (wuhaotiandeMacBook-Pro.local1625195004708) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2021-07-02 13:08:33.329 WARN  --- [QuartzScheduler_RenrenScheduler-wuhaotiandeMacBook-Pro.local1625195004708_MisfireHandler] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@261c966f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:35.297 WARN  --- [RenrenScheduler_QuartzSchedulerThread] com.zaxxer.hikari.pool.PoolBase : base - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c5f0eea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-07-02 13:08:35.312 ERROR --- [RenrenScheduler_QuartzSchedulerThread] org.springframework.scheduling.quartz.LocalDataSourceJobStore : Couldn't rollback jdbc connection. Connection is closed
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy102.rollback(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at com.sun.proxy.$Proxy108.rollback(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.rollbackConnection(JobStoreSupport.java:3712)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3871)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+2021-07-02 13:08:35.313 WARN  --- [RenrenScheduler_QuartzSchedulerThread] org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler : Failed restore connection's original auto commit setting.
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy102.setAutoCommit(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+2021-07-02 13:08:35.314 ERROR --- [RenrenScheduler_QuartzSchedulerThread] org.quartz.core.ErrorLogger : An error occurred while firing triggers '[Trigger 'DEFAULT.TASK_357409911':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 2 nextFireTime: Fri Jul 02 12:35:00 CST 2021]'
+org.quartz.JobPersistenceException: Couldn't commit jdbc connection. Connection is closed
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.commitConnection(JobStoreSupport.java:3734)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3851)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at com.sun.proxy.$Proxy102.commit(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:387)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at com.sun.proxy.$Proxy108.commit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.commitConnection(JobStoreSupport.java:3732)
+	... 3 common frames omitted
+2021-07-02 13:59:57.194 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 15:11:07.162 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'riskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'riskService': Unsatisfied dependency expressed through field 'riskMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mt.demo2.mapper.RiskMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-02 15:11:07.381 ERROR --- [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field riskMapper in com.mt.demo2.service.impl.RiskServiceImpl required a bean of type 'com.mt.demo2.mapper.RiskMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mt.demo2.mapper.RiskMapper' in your configuration.
+
+2021-07-02 15:17:22.310 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'riskService': Unsatisfied dependency expressed through field 'riskMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mt.demo2.mapper.RiskMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-02 15:17:22.494 ERROR --- [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field riskMapper in com.mt.demo2.service.impl.RiskServiceImpl required a bean of type 'com.mt.demo2.mapper.RiskMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mt.demo2.mapper.RiskMapper' in your configuration.
+
+2021-07-02 15:18:59.453 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
+2021-07-02 15:19:18.403 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryuser
+2021-07-02 15:19:18.503 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthnotice/list
+2021-07-02 15:19:18.545 WARN  --- [http-nio-9004-exec-6] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 15:19:18.575 WARN  --- [http-nio-9004-exec-8] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 15:19:18.585 WARN  --- [http-nio-9004-exec-10] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-02 15:19:18.604 WARN  --- [http-nio-9004-exec-4] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 15:19:18.619 WARN  --- [http-nio-9004-exec-3] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/failcause
+2021-07-02 15:19:18.624 WARN  --- [http-nio-9004-exec-5] org.springframework.web.servlet.PageNotFound : No mapping for GET /healthreport/queryindex
+2021-07-02 15:28:59.415 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'riskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'riskService': Unsatisfied dependency expressed through field 'riskMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mt.demo2.mapper.RiskMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-02 15:28:59.570 ERROR --- [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field riskMapper in com.mt.demo2.service.impl.RiskServiceImpl required a bean of type 'com.mt.demo2.mapper.RiskMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mt.demo2.mapper.RiskMapper' in your configuration.
+
+2021-07-02 15:30:36.398 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'riskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'riskService': Unsatisfied dependency expressed through field 'riskMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mt.demo2.mapper.RiskMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-07-02 15:30:36.561 ERROR --- [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field riskMapper in com.mt.demo2.service.impl.RiskServiceImpl required a bean of type 'com.mt.demo2.mapper.RiskMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mt.demo2.mapper.RiskMapper' in your configuration.
+
+2021-07-02 15:39:02.271 ERROR --- [main] com.baomidou.mybatisplus.core.MybatisConfiguration : mapper[com.mt.dictionary.mapper.DictionaryMapper.getListOne] is ignored, because it exists, maybe from xml file
