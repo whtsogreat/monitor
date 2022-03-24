@@ -7,6 +7,7 @@ import com.mt.CenEAISiteRealtime.entity.CenEAISiteRealtimeEntity;
 import com.mt.CenEAISiteRealtime.entity.DicCenterEntity;
 import com.mt.CenEAISiteRealtime.service.CenEAISiteRealtimeService;
 import com.mt.auth.utils.JsonResponse;
+import com.mt.auth.utils.TokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,12 +27,13 @@ import java.util.Arrays;
 public class CenEAISiteRealtimeController {
     @Autowired
     private CenEAISiteRealtimeService cenEAISiteRealtimeService;
-//    @Autowired
-//    private  TokenUtils tokenUtils;//引入登录用户权限类
+    @Autowired
+    private TokenUtils tokenUtils;//引入登录用户权限类
     @Autowired
     private CenEAISiteRealtimeDao cenEAISiteRealtimeDao;
     @Autowired
     private DicCenterDao dicCenterDao;
+
     /**
      * 列表
      */
